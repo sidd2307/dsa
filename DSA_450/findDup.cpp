@@ -26,7 +26,7 @@ void findDupNegate(int arr[], int n)
     cout << "This method temporarily modifies the array: " << endl;
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] > 0)
+        if (arr[abs(arr[i])] > 0)
         {
             arr[arr[i]] = -arr[arr[i]];
         }
