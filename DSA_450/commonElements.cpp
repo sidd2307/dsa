@@ -18,12 +18,13 @@ void commonElements(int a1[], int a2[], int a3[], int a, int b, int c)
         {
             i++;
         }
-        else if (a1[i] > a3[k] && a2[j] > a3[k])
+        else if (a2[j] < a3[k])
+        {
+            j++;
+        }
+        else
         {
             k++;
-        }
-        else{
-            j++;
         }
     }
 
